@@ -40,7 +40,7 @@ class Task
      *
      * @ORM\Column(name="states", type="string", length=255)
      */
-    private $states;
+    private $status;
 
     /**
      * @var \DateTime
@@ -123,27 +123,19 @@ class Task
     }
 
     /**
-     * Set states
-     *
-     * @param string $states
-     *
-     * @return Task
+     * @return string
      */
-    public function setStates($states)
+    public function getStatus()
     {
-        $this->states = $states;
-
-        return $this;
+        return $this->status;
     }
 
     /**
-     * Get states
-     *
-     * @return string
+     * @param string $status
      */
-    public function getStates()
+    public function setStatus( $status )
     {
-        return $this->states;
+        $this->status = $status;
     }
 
     /**

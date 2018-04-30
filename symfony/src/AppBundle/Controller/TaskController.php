@@ -8,6 +8,8 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Services\Helpers;
+use AppBundle\Services\JwtAuth;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Tests\Controller;
 
@@ -17,6 +19,7 @@ class TaskController extends Controller
     }
 
     public function tasksAction(Request $request){
+        dump('test');exit;
     }
 
     public function taskAction(Request $request, $id = null){
