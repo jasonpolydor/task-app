@@ -67,15 +67,3 @@ swiftmailer:
     password: '%mailer_password%'
     spool: { type: memory }
 
-# KnpPaginatorBundle
-#knp_paginator:
-#    page_range: 5
-#    default_options:
-#        page_name: page
-#        sort_field_name: sort
-#        sort_direction_name: direction
-#        distinct: true
-#    template:
-#        pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig
-#        sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig
-

@@ -1,33 +1,53 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: digital14
- * Date: 4/30/18
- * Time: 8:08 PM
- */
 
 namespace AppBundle\Controller;
 
 use AppBundle\Services\Helpers;
 use AppBundle\Services\JwtAuth;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\Tests\Controller;
 
 class TaskController extends Controller
 {
-    public function newAction(Request $request, $id=null){
-    }
-
     public function tasksAction(Request $request){
-        dump('test');exit;
-    }
+        $helpers = $this->get(Helpers::class);
+        $jwt_auth = $this->get(JwtAuth::class);
 
-    public function taskAction(Request $request, $id = null){
-    }
+        $token = $request->get("authorization",null);
+        $authCheck = $jwt_auth->checkToken($token);
 
-    public function searchAction(Request $request, $search = null){
-    }
+        if($authCheck){
+            $identity = $jwt_auth->checkToken($token, true);
 
-    public function removeAction(Request $request, $id = null){
+            $em = $this->getDoctrine()->getManager();
+
+            $dql = "SELECT t FROM CoreBundle:Task t WHERE t.users = {$identity->sub} ORDER BY t.id DESC";
+            $query = $em->createQuery($dql);
+
+            $page = $request->query->getInt('page',1);
+            $paginator = $this->get('knp_paginator');
+            $items_per_page = 2;
+
+            $pagination = $paginator->paginate($query, $page, $items_per_page);
+            $total_items_count = $pagination->getTotalItemCount();
+
+            $data = array(
+                'status'=>'success',
+                'code'	=>200,
+                'total_items_count'	=> $total_items_count,
+                'items_per_page' => $items_per_page,
+                'total_pages' => ceil($total_items_count / $items_per_page),
+                'data'=>$pagination
+            );
+
+        }else{
+            $data = array(
+                'status'=>'error',
+                'code'	=>400,
+                'msg'	=>'Authorization not valid'
+            );
+        }
+
+        return $helpers->json($data);
     }
 }
