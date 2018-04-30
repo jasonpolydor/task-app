@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef2aadb1-48ba-4d94-95cb-38e528bbb0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/.gitkeep" afterPath="$PROJECT_DIR$/angular/src/assets/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/favicon.ico" afterPath="$PROJECT_DIR$/angular/src/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/.angular-cli.json" afterPath="$PROJECT_DIR$/angular/.angular-cli.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/.editorconfig" afterPath="$PROJECT_DIR$/angular/.editorconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/.gitignore" afterPath="$PROJECT_DIR$/angular/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/README.md" afterPath="$PROJECT_DIR$/angular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/e2e/app.e2e-spec.ts" afterPath="$PROJECT_DIR$/angular/e2e/app.e2e-spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/e2e/app.po.ts" afterPath="$PROJECT_DIR$/angular/e2e/app.po.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/e2e/tsconfig.e2e.json" afterPath="$PROJECT_DIR$/angular/e2e/tsconfig.e2e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/karma.conf.js" afterPath="$PROJECT_DIR$/angular/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/package-lock.json" afterPath="$PROJECT_DIR$/angular/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/package.json" afterPath="$PROJECT_DIR$/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/protractor.conf.js" afterPath="$PROJECT_DIR$/angular/protractor.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/app.component.css" afterPath="$PROJECT_DIR$/angular/src/app/app.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/app.component.html" afterPath="$PROJECT_DIR$/angular/src/app/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/app.component.spec.ts" afterPath="$PROJECT_DIR$/angular/src/app/app.component.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/app.component.ts" afterPath="$PROJECT_DIR$/angular/src/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/environments/environment.prod.ts" afterPath="$PROJECT_DIR$/angular/src/environments/environment.prod.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/environments/environment.ts" afterPath="$PROJECT_DIR$/angular/src/environments/environment.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/index.html" afterPath="$PROJECT_DIR$/angular/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/main.ts" afterPath="$PROJECT_DIR$/angular/src/main.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/polyfills.ts" afterPath="$PROJECT_DIR$/angular/src/polyfills.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/styles.css" afterPath="$PROJECT_DIR$/angular/src/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/test.ts" afterPath="$PROJECT_DIR$/angular/src/test.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/tsconfig.app.json" afterPath="$PROJECT_DIR$/angular/src/tsconfig.app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/tsconfig.spec.json" afterPath="$PROJECT_DIR$/angular/src/tsconfig.spec.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/typings.d.ts" afterPath="$PROJECT_DIR$/angular/src/typings.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/tsconfig.json" afterPath="$PROJECT_DIR$/angular/tsconfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/tslint.json" afterPath="$PROJECT_DIR$/angular/tslint.json" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Resources/config/routing/task.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Resources/config/routing/user.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Resources/config/routing/default.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Controller/TaskController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+              <folding>
+                <element signature="e#125#170#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Controller/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding>
+                <element signature="e#126#171#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.orm.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/doctrine/Task.orm.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-843">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.orm.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/doctrine/User.orm.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-703">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cli</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/angular" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/angular/package.json" />
+        <option value="$PROJECT_DIR$/angular/package-lock.json" />
+        <option value="$PROJECT_DIR$/symfony/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/symfony/composer.json" />
+        <option value="$PROJECT_DIR$/symfony/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/symfony/src/CoreBundle/Entity/Task.php" />
+        <option value="$PROJECT_DIR$/symfony/src/CoreBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/symfony/src/AppBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/symfony/src/AppBundle/Controller/TaskController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/angular/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="67" />
+    <option name="y" value="308" />
+    <option name="width" value="1299" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task_app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../publispeak" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/angular/node_modules/tslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/symfony/src/AppBundle" />
+      <recent name="$PROJECT_DIR$/symfony/src/CoreBundle" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef2aadb1-48ba-4d94-95cb-38e528bbb0eb" name="Default" comment="" />
+      <created>1525097272924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525097272924</updated>
+      <workItem from="1525097274455" duration="7481000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7481000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="308" width="1299" height="772" extended-state="6" />
+    <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/angular/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/angular/src/polyfills.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="52" column="35" lean-forward="false" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1525101450092" expanded="true" signature="0:109" ph="imports: &lt;3 items&gt;" />
+            <marker date="1525101450092" expanded="true" signature="367:393" ph="parameters: &lt;1 key&gt;" />
+            <marker date="1525101450092" expanded="true" signature="391:393" ph="en" />
+            <marker date="1525101450092" expanded="true" signature="395:1095" ph="framework: &lt;12 keys&gt;" />
+            <marker date="1525101450092" expanded="true" signature="475:485" ph="%secret%" />
+            <marker date="1525101450092" expanded="true" signature="490:592" ph="router: &lt;2 keys&gt;" />
+            <marker date="1525101450092" expanded="true" signature="632:672" ph="validation: {1 key}" />
+            <marker date="1525101450092" expanded="true" signature="666:670" ph="true" />
+            <marker date="1525101450092" expanded="true" signature="739:749" ph="%locale%" />
+            <marker date="1525101450092" expanded="true" signature="775:999" ph="session: &lt;2 keys&gt;" />
+            <marker date="1525101450092" expanded="true" signature="896:923" ph="session.h…ative_file" />
+            <marker date="1525101450092" expanded="true" signature="943:999" ph="%kernel.p…vironment%" />
+            <marker date="1525101450092" expanded="true" signature="1043:1047" ph="true" />
+            <marker date="1525101450092" expanded="true" signature="1066:1095" ph="php_errors: &lt;1 key&gt;" />
+            <marker date="1525101450092" expanded="true" signature="1091:1095" ph="true" />
+            <marker date="1525101450092" expanded="true" signature="1118:1190" ph="twig: &lt;2 keys&gt;" />
+            <marker date="1525101450092" expanded="true" signature="1135:1151" ph="%kernel.debug%" />
+            <marker date="1525101450092" expanded="true" signature="1174:1190" ph="%kernel.debug%" />
+            <marker date="1525101450092" expanded="true" signature="1217:1920" ph="doctrine: &lt;2 keys&gt;" />
+            <marker date="1525101450092" expanded="true" signature="1231:1454" ph="dbal: &lt;7 keys&gt;" />
+            <marker date="1525101450092" expanded="true" signature="1253:1262" ph="pdo_mysql" />
+            <marker date="1525101450092" expanded="true" signature="1277:1294" ph="%database_host%" />
+            <marker date="1525101450092" expanded="true" signature="1343:1360" ph="%database_name%" />
+            <marker date="1525101450092" expanded="true" signature="1411:1432" ph="%database_password%" />
+            <marker date="1525101450092" expanded="true" signature="1450:1454" ph="UTF8" />
+            <marker date="1525101450092" expanded="true" signature="1770:1920" ph="orm: &lt;3 keys&gt;" />
+            <marker date="1525101450092" expanded="true" signature="1812:1828" ph="%kernel.debug%" />
+            <marker date="1525101450092" expanded="true" signature="1854:1893" ph="doctrine.…underscore" />
+            <marker date="1525101450092" expanded="true" signature="1916:1920" ph="true" />
+            <marker date="1525101450092" expanded="true" signature="1978:1998" ph="%mailer_transport%" />
+            <marker date="1525101450092" expanded="true" signature="2009:2024" ph="%mailer_host%" />
+            <marker date="1525101450092" expanded="true" signature="2039:2054" ph="%mailer_user%" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/CoreBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1523030579000" expanded="true" signature="0:62" ph="&lt;IfModule mod_authz_core.c&gt;" />
+            <marker date="1523030579000" expanded="true" signature="63:142" ph="&lt;IfModule !mod_authz_core.c&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Entity/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/doctrine/Task.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-843">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/doctrine/User.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Resources/config/routing/user.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Resources/config/routing/task.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Resources/config/routing/default.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#126#171#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony/src/AppBundle/Controller/TaskController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding>
+            <element signature="e#125#170#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
