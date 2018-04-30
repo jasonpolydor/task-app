@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import {Http, Response, Headers} from '@angular/http';
 import "rxjs/add/operator/map";
 import {Observable} from 'rxjs/Observable';
 import {GLOBAL} from './global';
@@ -11,7 +11,7 @@ export class UserService{
 	public identity;
 	public token;
 
-	constructor(private _http: HttpClient){
+	constructor(private _http: Http){
        this.url = GLOBAL.url;
 	}
 
@@ -19,7 +19,8 @@ export class UserService{
        const json = JSON.stringify(user_to_login);
        const params = `json=${json}`;
 
-       return this._http.post(`${this.url}/login`,params);
+       return this._http.post(`${this.url}/login`,params)
+                  .map(res=>res.json());
 	}
 
 	getIdentity(){
@@ -38,7 +39,8 @@ export class UserService{
 		const json 	= JSON.stringify(user_to_register);
 		const params = `json=${json}`;
 
-		return this._http.post(`${this.url}/user/new`,params);
+		return this._http.post(`${this.url}/user/new`,params)
+						 .map(res=>res.json());
 
 	}
 
@@ -47,13 +49,15 @@ export class UserService{
 		const token = this.getToken();
 		const params = `json=${json}&authorization=${token}`;
 
-		return this._http.post(`${this.url}/user/edit`, params);
+		return this._http.post(`${this.url}/user/edit`, params)
+						 .map(res=>res.json());
 	}
 
 	getTask(token,id){
 		const params  = `authorization=${token}`;
 
-		return this._http.post(`${this.url}/task/detail/${id}`, params);
+		return this._http.post(`${this.url}/task/detail/${id}`, params)
+			.map(res => res.json());
 
 	}
 }

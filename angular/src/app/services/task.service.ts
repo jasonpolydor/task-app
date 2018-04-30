@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import {Http, Response, Headers, RequestOptions} from '@angular/http';
 import "rxjs/add/operator/map";
 import {Observable} from 'rxjs/Observable';
 import {GLOBAL} from './global';
@@ -11,7 +11,7 @@ export class TaskService{
 	public token;
 
 	constructor(
-		private _http: HttpClient
+		private _http: Http
 	){
        this.url = GLOBAL.url;
 	}
@@ -20,7 +20,8 @@ export class TaskService{
 		const json 	= JSON.stringify(task);
 		const params 	= `json=${json}&authorization=${token}`;
 
-		return this._http.post(`${this.url}/task/new`,params);
+		return this._http.post(`${this.url}/task/new`,params)
+						 .map(res=>res.json());
 	}
 
 	getTasks(token, page = null){
@@ -29,20 +30,23 @@ export class TaskService{
 		if(page == null){
 			page=1;
 		}
-		return this._http.post(`${this.url}/task/list?page=${page}`,params);
+		return this._http.post(`${this.url}/task/list?page=${page}`,params)
+						 .map(res=>res.json());
 	}
 
 	getTask(token, id){
 		const params = `authorization=${token}`;
 
-		return this._http.post(`${this.url}/task/detail/${id}`,params);
+		return this._http.post(`${this.url}/task/detail/${id}`,params)
+						 .map(res=>res.json());
 	}
 
 	update(token, task, id){
 		const json 	= JSON.stringify(task);
 		const params 	= `json=${json}&authorization=${token}`;
 
-		return this._http.post(`${this.url}/task/edit/${id}`, params);
+		return this._http.post(`${this.url}/task/edit/${id}`, params)
+						 .map(res=>res.json());
 	}
 
 	search(token, search = null, filter = null, order = null){
@@ -56,12 +60,14 @@ export class TaskService{
 			url = `${this.url}/task/search/${search}`;
 		}
 
-		return this._http.post(url, params);
+		return this._http.post(url, params)
+					.map(res => res.json());
 	}
 
 	deleteTask(token, id){
 		const params = `authorization=${token}`;
 
-		return this._http.post(`${this.url}/task/remove/${id}`,params);
+		return this._http.post(`${this.url}/task/remove/${id}`,params)
+						 .map(res=>res.json());
 	}
 }
