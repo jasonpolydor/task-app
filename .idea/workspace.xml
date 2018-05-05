@@ -45,8 +45,8 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="-40">
+              <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
               <folding>
                 <element signature="e#37#85#0#PHP" expanded="true" />
               </folding>
@@ -58,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Entity/Task.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
-              <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+              <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -69,16 +69,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.orm.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Resources/config/doctrine/Task.orm.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -318,70 +308,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task_app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doctrine" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task_app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoreBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -550,12 +476,12 @@
       <workItem from="1525097274455" duration="14640000" />
       <workItem from="1525239401163" duration="368000" />
       <workItem from="1525324439109" duration="649000" />
-      <workItem from="1525521558280" duration="10342000" />
+      <workItem from="1525521558280" duration="10470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26550000" />
+    <option name="totallyTimeSpent" value="26678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="308" width="1299" height="772" extended-state="6" />
@@ -963,7 +889,7 @@
     <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Entity/Task.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
-          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -978,8 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/symfony/src/CoreBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="-40">
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding>
             <element signature="e#37#85#0#PHP" expanded="true" />
           </folding>
