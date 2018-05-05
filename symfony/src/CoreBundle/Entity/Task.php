@@ -38,7 +38,7 @@ class Task
     /**
      * @var string
      *
-     * @ORM\Column(name="states", type="string", length=255)
+     * @ORM\Column(name="status", type="string", length=255)
      */
     private $status;
 

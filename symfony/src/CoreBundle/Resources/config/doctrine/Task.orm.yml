@@ -27,17 +27,17 @@ CoreBundle\Entity\Task:
             length: 255
             options:
                 fixed: false
-        states:
+        status:
             type: string
             nullable: false
             length: 255
             options:
                 fixed: false
-        createdat:
+        createdAt:
             type: time
             nullable: false
             column: createdAt
-        updatedat:
+        updatedAt:
             type: time
             nullable: false
             column: updatedAt

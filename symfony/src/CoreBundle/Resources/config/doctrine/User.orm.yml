@@ -29,19 +29,7 @@ CoreBundle\Entity\User:
             length: 255
             options:
                 fixed: false
-        email:
-            type: string
-            nullable: false
-            length: 255
-            options:
-                fixed: false
-        password:
-            type: string
-            nullable: false
-            length: 255
-            options:
-                fixed: false
-        createdat:
+        createdAt:
             type: datetime
             nullable: false
             column: createdAt
