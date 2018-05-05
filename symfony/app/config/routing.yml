@@ -3,11 +3,16 @@
 #    prefix:   /
 
 app:
-    resource: '@AppBundle/Resources/config/routing.yml'
-    prefix: /
+    resource: "@AppBundle/Controller/"
+    type:     annotation
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
 api_login_check:
     path: /api/login_check
+
+
+front:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /

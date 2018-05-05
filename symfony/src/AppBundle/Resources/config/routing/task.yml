@@ -8,11 +8,6 @@ task_edit:
     defaults: { _controller: "AppBundle:Task:edit"}
     methods: POST
 
-task_list:
-    path: /list
-    defaults: { _controller: "AppBundle:Task:tasks"}
-    methods: GET
-
 task_detail:
     path: /detail/{id}
     defaults: { _controller: "AppBundle:Task:task"}

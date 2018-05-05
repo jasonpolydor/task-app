@@ -1,0 +1,6 @@
+imports:
+    - { resource: 'services/tasks.yml' }
+
+services:
+    AppBundle\Service\Helpers:
+        arguments: ["@doctrine.orm.entity_manager"]
