@@ -1,6 +1,5 @@
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
-import {Observer} from 'rxjs/Observer';
 import 'rxjs/add/operator/do';
 import {UrlService} from '../url.service';
 
@@ -17,14 +16,8 @@ export abstract class RestService
   )
   {}
 
-  protected getItem(
-      routeGetter: Function,
-  ) : Observable<any>{
+  protected getItem(routeGetter: Function) : Observable<any>{
       return this.http
-          .get(routeGetter())
-          .do((state: any) =>
-          {
-              console.log(state);
-          });
+          .get(routeGetter());
   }
 }

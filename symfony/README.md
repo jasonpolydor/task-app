@@ -28,3 +28,12 @@ task.yml (service)
 	services:
     		AppBundle\Service\Tasks\Listing:
         		arguments: ["@doctrine.orm.entity_manager"]
+6. Custom CORS used in Helpers service to solve:
+https://ourcodeworld.com/articles/read/291/how-to-solve-the-client-side-access-control-allow-origin-request-error-with-your-own-symfony-3-api
+
+e.g.
+
+      $response->headers->set('Content-Type', 'application/json');
+      // Allow all websites
+      $response->headers->set('Access-Control-Allow-Origin', '*');
+

@@ -19,13 +19,9 @@ class Helpers{
         $this->em = $entityManager;
     }
 
-    /**
-     * @param $data
-     * @return Response
-     */
 	public function json($data){
-		$normalizers = [new GetSetMethodNormalizer()];
-		$encoders = ["json" => new JsonEncoder()];
+		$normalizers = array(new GetSetMethodNormalizer());
+		$encoders = array("json" => new JsonEncoder());
 
 		$serializer = new Serializer($normalizers, $encoders);
 		$json = $serializer->serialize($data, 'json');
@@ -33,8 +29,11 @@ class Helpers{
 		$response = new Response();
 		$response->setContent($json);
 		$response->headers->set('Content-Type','application/json');
+        // Allow all websites
+        $response->headers->set('Access-Control-Allow-Origin', '*');
 
 		return $response;
+
 	}
 
 }
