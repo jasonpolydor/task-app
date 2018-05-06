@@ -24,8 +24,8 @@ class Helpers{
      * @return Response
      */
 	public function json($data){
-		$normalizers = array(new GetSetMethodNormalizer());
-		$encoders = array("json" => new JsonEncoder());
+		$normalizers = [new GetSetMethodNormalizer()];
+		$encoders = ["json" => new JsonEncoder()];
 
 		$serializer = new Serializer($normalizers, $encoders);
 		$json = $serializer->serialize($data, 'json');
@@ -35,7 +35,6 @@ class Helpers{
 		$response->headers->set('Content-Type','application/json');
 
 		return $response;
-
 	}
 
 }

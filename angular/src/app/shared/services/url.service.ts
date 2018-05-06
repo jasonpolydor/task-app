@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UrlService {
 
-  constructor() { }
+  constructor() {
+    this.API_URL = environment.apiUrl;
+  }
 
   getTasks(): string
   {
-    return this.getRouter().generate('task_list');
-  }
-
-  private getRouter():any{
-    return window['Routing'];
+      return this.API_URL + '/tasks/list';
   }
 }
