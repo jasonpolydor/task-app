@@ -11,3 +11,5 @@ https://stackoverflow.com/questions/47180634/i-get-http-failure-response-for-unk
 https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 SOLUTION:
 https://ourcodeworld.com/articles/read/291/how-to-solve-the-client-side-access-control-allow-origin-request-error-with-your-own-symfony-3-api
+
+4. use ng serve --ssl

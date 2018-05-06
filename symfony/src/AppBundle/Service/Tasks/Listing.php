@@ -52,11 +52,7 @@ class Listing
             'user' => $task->getUser()->getUsername(),
             'title' => $task->getTitle(),
             'description' => $task->getDescription(),
-            'status' => $task->getStatus(),
-            'datetime' => [
-                'createdAt' => $task->getCreatedAt()->getTimestamp(),
-                'deadlineAt' => $task->getUpdatedAt()->getTimestamp()
-            ],
+            'status' => $task->getStatus()
         ];
     }
 }

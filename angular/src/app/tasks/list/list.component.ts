@@ -1,27 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { TasksService } from '../services/tasks.service';
-import { UnsubscribeHelper } from '../../shared/utils/Unsubscribe.helper';
+import {TaskModel} from '../models/task.model';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent extends UnsubscribeHelper implements OnInit {
+export class ListComponent implements OnInit {
+  tasks: TaskModel[];
 
-  private tasks;
   constructor(
-      private tasksService: TasksService
-  ) {
-    super();
-  }
+      public tasksService: TasksService
+  ){}
 
   ngOnInit() {
-    const tasks$ = this.tasksService.getTaskList();
-
-    this.addSubscription(tasks$.subscribe(state => {
-      this.tasks = state;
-    }));
-    console.log(this.tasks)
+    this.tasksService.getTasks();
   }
 }
