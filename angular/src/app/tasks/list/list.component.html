@@ -1,6 +1,6 @@
 <div class="container">
   <h1>List of Tasks</h1>
-  <a class="btn btn-primary" [routerLink]="['create']">Create new user</a>
+  <a class="btn btn-primary" [routerLink]="['create']"><i class="fa fa-plus"></i> new task</a>
   <app-item *ngFor="let task of (tasksService.getObservable() |async)" [task]=task></app-item>
 </div>
 
