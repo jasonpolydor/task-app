@@ -24,6 +24,7 @@ export class TasksService extends RestService{
       http: HttpClient
     ) {
         super(urlService, http);
+        this._tasks$ = new BehaviorSubject<TaskModel[]>(this.tasks);
     }
 
     public getTasks()
@@ -33,7 +34,7 @@ export class TasksService extends RestService{
         )
         .subscribe(data =>{
             this.tasks = data['tasks'];
-            this._tasks$ = new BehaviorSubject<TaskModel[]>(this.tasks);
+            this._tasks$.next(this.tasks);
         });
     }
 
