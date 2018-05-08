@@ -31,12 +31,8 @@ export class TasksService extends RestService{
         this.getItem(
             () => this.urlService.getTasks()
         )
-        .map(data =>
-            Object.keys(data).map(k => data[k])
-        )
         .subscribe(data =>{
-            console.log(data);
-            this.tasks = data;
+            this.tasks = data['tasks'];
             this._tasks$ = new BehaviorSubject<TaskModel[]>(this.tasks);
         });
     }
