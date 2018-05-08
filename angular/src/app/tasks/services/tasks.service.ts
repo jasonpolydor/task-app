@@ -47,11 +47,21 @@ export class TasksService extends RestService{
         this._tasks$.next(this.tasks);
     }
 
-    public getObservable(): Observable<TaskModel[]> {
-        return this._tasks$.asObservable();
+    public editTask(task) {
+        const index = this.users.findIndex(t => t.id == task.id);
+        this.tasks = [
+            ...this.tasks.slice(0, index),
+            user,
+            ...this.tasks.slice(index + 1)
+        ];
+        this._tasks$.next(this.tasks);
     }
 
-    public deleteTasks(task) {
+    public deleteTask(task) {
         this.tasks.splice(this.tasks.indexOf(task), 1);
+    }
+
+    public getObservable(): Observable<TaskModel[]> {
+        return this._tasks$.asObservable();
     }
 }

@@ -16,6 +16,6 @@ export class ItemComponent implements OnInit {
   }
 
   deleteTask(){
-    this.tasksService.deleteTasks(this.task);
+    this.tasksService.deleteTask(this.task);
   }
 }
