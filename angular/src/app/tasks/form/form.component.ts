@@ -4,8 +4,7 @@ import { TasksService } from '../services/tasks.service';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
-import { tasksnameValidators } from '../../shared/common/validators/tasksname.validators';
-import {UnsubscribeHelper} from '../../shared/utils/Unsubscribe.helper';
+import { UnsubscribeHelper } from '../../shared/utils/Unsubscribe.helper';
 
 @Component({
     selector: 'app-form',
@@ -21,6 +20,7 @@ export class FormComponent extends UnsubscribeHelper implements OnInit, OnDestro
         protected activateRoute : ActivatedRoute,
         protected fb: FormBuilder
     ){
+        super();
         this.taskForm = fb.group({
             id: ['', Validators.required],
             user: ['', Validators.required]
@@ -34,17 +34,17 @@ export class FormComponent extends UnsubscribeHelper implements OnInit, OnDestro
                 this.task.isEditable = true;
             }
             else
-                this.tasks = new TaskModel();
+                this.task = new TaskModel();
         }));
     }
 
     editTask(){
-        this.tasksService.editTask(this.tasks);
+        this.tasksService.editTask(this.task);
         this.router.navigate(['']);
     }
 
     createTask(){
-        this.tasksService.newTask(this.tasks)
+        this.tasksService.newTask(this.task)
         this.router.navigate(['']);
     }
 }
