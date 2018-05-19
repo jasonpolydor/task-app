@@ -4,7 +4,7 @@ import {FormComponent} from './tasks/form/form.component';
 
 export const routes: Routes = [
     {
-        path: 'list',
+        path: '',
         component: ListComponent,
     },
     {

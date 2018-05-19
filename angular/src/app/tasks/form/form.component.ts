@@ -18,16 +18,18 @@ export class FormComponent extends UnsubscribeHelper implements OnInit, OnDestro
         protected tasksService: TasksService,
         protected router: Router,
         protected activateRoute : ActivatedRoute,
-        protected fb: FormBuilder
     ){
         super();
-        this.taskForm = fb.group({
-            id: ['', Validators.required],
-            user: ['', Validators.required]
-        });
     }
 
     ngOnInit() {
+        this.taskForm = new FormGroup({
+            id:  new FormControl(),
+            title:  new FormControl(),
+            user:  new FormControl(),
+            description:  new FormControl(),
+            status:  new FormControl(),
+        });
         this.addSubscription(this.activateRoute.params.subscribe(params =>{
             if(params['id']){
                 this.task = this.tasksService.getTask(+params['id']);
@@ -40,11 +42,11 @@ export class FormComponent extends UnsubscribeHelper implements OnInit, OnDestro
 
     editTask(){
         this.tasksService.editTask(this.task);
-        this.router.navigate(['list']);
+        this.router.navigate(['']);
     }
 
     createTask(){
         this.tasksService.newTask(this.task);
-        this.router.navigate(['list']);
+        this.router.navigate(['']);
     }
 }
