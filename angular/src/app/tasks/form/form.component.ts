@@ -1,9 +1,9 @@
-import {Component, EventEmitter, OnInit, OnDestroy, Output} from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TaskModel } from '../models/task.model';
 import { TasksService } from '../services/tasks.service';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 import { UnsubscribeHelper } from '../../shared/utils/Unsubscribe.helper';
 
 @Component({

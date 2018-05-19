@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef2aadb1-48ba-4d94-95cb-38e528bbb0eb" name="Default" comment="" />
+    <list default="true" id="ef2aadb1-48ba-4d94-95cb-38e528bbb0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/tasks/form/form.component.ts" afterPath="$PROJECT_DIR$/angular/src/app/tasks/form/form.component.ts" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,10 +79,10 @@
       <file leaf-file-name="form.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular/src/app/tasks/form/form.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="140">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <element signature="e#0#81#0" expanded="true" />
+                <element signature="e#0#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -536,12 +538,12 @@
       <workItem from="1525756432475" duration="8067000" />
       <workItem from="1525843793837" duration="728000" />
       <workItem from="1525964560809" duration="636000" />
-      <workItem from="1526736532131" duration="2553000" />
+      <workItem from="1526736532131" duration="2699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76634000" />
+    <option name="totallyTimeSpent" value="76780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-4" width="1853" height="1084" extended-state="6" />
@@ -955,10 +957,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular/src/app/tasks/form/form.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#81#0" expanded="true" />
+            <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
