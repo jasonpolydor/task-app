@@ -49,7 +49,7 @@ class Listing
     {
         return [
             'id' => $task->getId(),
-            'user' => $task->getUser()->getUsername(),
+            'user' => $task->getUser()->getId(),
             'title' => $task->getTitle(),
             'description' => $task->getDescription(),
             'status' => $task->getStatus()

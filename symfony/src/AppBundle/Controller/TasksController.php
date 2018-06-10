@@ -14,4 +14,8 @@ class TasksController extends Controller
 
         return $this->get(Helpers::class)->json($tasks);
     }
+
+    public function newAction(){
+
+    }
 }
