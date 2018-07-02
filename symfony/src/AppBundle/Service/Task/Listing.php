@@ -3,6 +3,7 @@
 namespace AppBundle\Service\Task;
 
 use CoreBundle\Entity\Task;
+use CoreBundle\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 
 class Listing
@@ -33,11 +34,16 @@ class Listing
             'id' => $id
         ]);
 
+        $user = $this->em->getRepository(User::class)->findOneBy([
+            'id' => $data['user_id']
+        ]);
+
         if (empty($task) || empty($data)) {
             return false;
         }
         else {
             $task->setTitle($data['title']);
+            $task->setUser($user);
             $task->setDescription($data['description']);
             $task->setStatus($data['status']);
             $this->em->persist($task);
