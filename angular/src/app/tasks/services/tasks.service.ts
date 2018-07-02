@@ -40,6 +40,7 @@ export class TasksService extends RestService{
 
     public editTask(task: TaskModel) {
         console.log(this.urlService.editTask(task.id));
+        console.log(task);
         this.postItem(
             () => this.urlService.editTask(task.id),
             () => task

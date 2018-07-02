@@ -35,7 +35,7 @@ class Listing
         ]);
 
         $user = $this->em->getRepository(User::class)->findOneBy([
-            'id' => $data['user_id']
+            'id' => $data['user']
         ]);
 
         if (empty($task) || empty($data)) {
