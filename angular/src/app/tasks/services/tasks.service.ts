@@ -38,22 +38,31 @@ export class TasksService extends RestService{
         });
     }
 
-    public getTask(id: number): TaskModel {
-        return this.tasks.find(task => task.id == id);
-    }
+    public editTask(task: TaskModel) {
+        console.log(this.urlService.editTask(task.id));
+        this.postItem(
+            () => this.urlService.editTask(task.id),
+            () => task
+        )
+        .subscribe(data =>{
+            alert('updated');
+        });
 
-    public newTask(task: TaskModel) {
-        this.tasks.push(task);
-        this._tasks$.next(this.tasks);
-    }
-
-    public editTask(task) {
         const index = this.tasks.findIndex(t => t.id == task.id);
         this.tasks = [
             ...this.tasks.slice(0, index),
             task,
             ...this.tasks.slice(index + 1)
         ];
+        this._tasks$.next(this.tasks);
+    }
+
+    public getTask(id: number): TaskModel {
+        return this.tasks.find(task => task.id == id);
+    }
+
+    public newTask(task: TaskModel) {
+        this.tasks.push(task);
         this._tasks$.next(this.tasks);
     }
 

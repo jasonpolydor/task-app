@@ -1,6 +1,0 @@
-task_list:
-    path: /list
-    defaults: { _controller: "AppBundle:Tasks:index"}
-    methods:  GET
-    options:
-        expose: true

@@ -13,6 +13,10 @@ export class UrlService {
 
     getTasks(): string
     {
-      return this.API_URL + '/tasks/list';
+      return this.API_URL + '/task/list';
+    }
+
+    editTask(id: number): string{
+        return this.API_URL + '/task/edit/' + id;
     }
 }

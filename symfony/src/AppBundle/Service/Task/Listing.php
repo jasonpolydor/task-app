@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Service\Tasks;
+namespace AppBundle\Service\Task;
 
 use CoreBundle\Entity\Task;
 use Doctrine\ORM\EntityManagerInterface;
@@ -26,6 +26,24 @@ class Listing
         return [
             'tasks' => $this->prepare($tasks)
         ];
+    }
+
+    public function updateTask($id, $data){
+        $task = $this->em->getRepository(Task::class)->findOneBy([
+            'id' => $id
+        ]);
+
+        if (empty($task) || empty($data)) {
+            return false;
+        }
+        else {
+            $task->setTitle($data['title']);
+            $task->setDescription($data['description']);
+            $task->setStatus($data['status']);
+            $this->em->persist($task);
+            $this->em->flush();
+            return true;
+        }
     }
 
     /**
