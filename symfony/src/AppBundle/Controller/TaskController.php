@@ -32,6 +32,9 @@ class TaskController extends Controller
     {
         $params = json_decode($request->getContent(),true);
 
-        return $this->get(Helpers::class)->json($params);
+        if(!$this->get(Listing::class)->addTask($params))
+            return $this->get(Helpers::class)->json("Task not added");
+
+        return $this->get(Helpers::class)->json("Success");
     }
 }

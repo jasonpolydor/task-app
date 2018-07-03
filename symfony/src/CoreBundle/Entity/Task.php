@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="task")
  * @ORM\Entity(repositoryClass="CoreBundle\Repository\TaskRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Task
 {
@@ -45,14 +46,14 @@ class Task
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="createdAt", type="time")
+     * @ORM\Column(name="createdAt", type="datetime")
      */
     private $createdAt;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="updatedAt", type="time")
+     * @ORM\Column(name="updatedAt", type="datetime")
      */
     private $updatedAt;
 
@@ -200,5 +201,24 @@ class Task
     public function setUser( $user )
     {
         $this->user = $user;
+    }
+
+    /**
+     * Gets triggered only on insert
+     * @ORM\PrePersist
+     */
+    public function onPrePersist()
+    {
+        $this->createdAt = new \DateTime("now");
+        $this->updatedAt = new \DateTime("now");
+    }
+
+    /**
+     * Gets triggered every time on update
+     * @ORM\PreUpdate
+     */
+    public function onPreUpdate()
+    {
+        $this->updatedAt = new \DateTime("now");
     }
 }

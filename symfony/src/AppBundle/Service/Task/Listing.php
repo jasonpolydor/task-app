@@ -38,18 +38,36 @@ class Listing
             'id' => $data['user']
         ]);
 
-        if (empty($task) || empty($data)) {
+        if (empty($task) || empty($data))
             return false;
-        }
-        else {
-            $task->setTitle($data['title']);
-            $task->setUser($user);
-            $task->setDescription($data['description']);
-            $task->setStatus($data['status']);
-            $this->em->persist($task);
-            $this->em->flush();
-            return true;
-        }
+
+        $task->setTitle($data['title']);
+        $task->setUser($user);
+        $task->setDescription($data['description']);
+        $task->setStatus($data['status']);
+        $this->em->persist($task);
+        $this->em->flush();
+        return true;
+    }
+
+    public function addTask($data){
+
+        $user = $this->em->getRepository(User::class)->findOneBy([
+            'id' => $data['user']
+        ]);
+
+        if (empty($data))
+            return false;
+
+        $task = new Task();
+        $task->setTitle($data['title']);
+        $task->setUser($user);
+        $task->setDescription($data['description']);
+        $task->setStatus($data['status']);
+        $this->em->persist($task);
+        $this->em->flush();
+        return true;
+
     }
 
     /**
