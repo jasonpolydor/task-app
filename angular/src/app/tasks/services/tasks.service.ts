@@ -43,7 +43,7 @@ export class TasksService extends RestService{
         console.log(task);
         this.postItem(
             () => this.urlService.editTask(task.id),
-            () => task
+            task
         )
         .subscribe(data =>{
             alert('updated');

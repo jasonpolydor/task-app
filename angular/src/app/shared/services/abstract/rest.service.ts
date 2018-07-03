@@ -21,8 +21,8 @@ export abstract class RestService
           .get(routeGetter());
   }
 
-  protected postItem(routeGetter: Function, params: Function) : Observable<any>{
+  protected postItem(routeGetter: Function, params) : Observable<any>{
     return this.http
-        .post(routeGetter(), params());
+        .post(routeGetter(), params);
   }
 }
