@@ -19,4 +19,8 @@ export class UrlService {
     editTask(id: number): string{
         return this.API_URL + '/task/edit/' + id;
     }
+
+    newTask(): string{
+        return this.API_URL + '/task/new';
+    }
 }

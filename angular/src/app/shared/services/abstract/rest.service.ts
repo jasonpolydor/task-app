@@ -21,8 +21,14 @@ export abstract class RestService
           .get(routeGetter());
   }
 
+  protected putItem(routeGetter: Function, params) : Observable<any>{
+    return this.http
+        .put(routeGetter(), params);
+  }
+
   protected postItem(routeGetter: Function, params) : Observable<any>{
     return this.http
         .post(routeGetter(), params);
   }
+
 }

@@ -38,8 +38,12 @@ export class TasksService extends RestService{
         });
     }
 
+    public getTask(id: number): TaskModel {
+        return this.tasks.find(task => task.id == id);
+    }
+
     public editTask(task: TaskModel) {
-        this.postItem(
+        this.putItem(
             () => this.urlService.editTask(task.id),
             task
         )
@@ -54,13 +58,15 @@ export class TasksService extends RestService{
         });
     }
 
-    public getTask(id: number): TaskModel {
-        return this.tasks.find(task => task.id == id);
-    }
-
     public newTask(task: TaskModel) {
-        this.tasks.push(task);
-        this._tasks$.next(this.tasks);
+        this.postItem(
+            () => this.urlService.newTask(),
+            task
+        )
+        .subscribe(data =>{
+            this.tasks.push(task);
+            this._tasks$.next(this.tasks);
+        });
     }
 
     public deleteTask(task) {

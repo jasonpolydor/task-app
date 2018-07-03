@@ -27,4 +27,11 @@ class TaskController extends Controller
 
         return $this->get(Helpers::class)->json("Success");
     }
+
+    public function newAction(Request $request)
+    {
+        $params = json_decode($request->getContent(),true);
+
+        return $this->get(Helpers::class)->json($params);
+    }
 }

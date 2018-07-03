@@ -13,7 +13,12 @@ task_new:
 task_edit:
     path: /edit/{id}
     defaults: { _controller: "AppBundle:Task:edit"}
-    methods: POST
+    methods: PUT
+
+task_remove:
+    path: /remove/{id}
+    defaults: { _controller: "AppBundle:Task:remove"}
+    methods: DELETE
 
 task_detail:
     path: /detail/{id}
@@ -23,9 +28,4 @@ task_detail:
 task_search:
     path: /search
     defaults: { _controller: "AppBundle:Task:search"}
-    methods: POST
-
-task_remove:
-    path: /remove/{id}
-    defaults: { _controller: "AppBundle:Task:remove"}
     methods: POST
