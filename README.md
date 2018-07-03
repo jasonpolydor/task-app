@@ -11,3 +11,6 @@ https://stackoverflow.com/questions/9784930/how-to-get-the-request-parameters-in
 CORS Error:
 install nelmio CORS bundle:
 https://ourcodeworld.com/articles/read/291/how-to-solve-the-client-side-access-control-allow-origin-request-error-with-your-own-symfony-3-api
+
+lifecycle callbacks:
+http://symfony.com/doc/current/doctrine/lifecycle_callbacks.html
