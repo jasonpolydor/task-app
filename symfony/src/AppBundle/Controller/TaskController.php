@@ -56,11 +56,11 @@ class TaskController extends Controller
      */
     public function deleteAction(Request $request)
     {
-        $id = json_decode($request->getContent(),true);
+        $data = json_decode($request->getContent(),true);
 
-        if(!$this->get(Listing::class)->deleteTask($id))
+        if(!$this->get(Listing::class)->deleteTask($data['id']))
             return $this->get(Helpers::class)->json("Task not deleted");
 
-        return $this->get(Helpers::class)->json("Successfully delete of task ". $id);
+        return $this->get(Helpers::class)->json("Successfully delete of task ". $data['id']);
     }
 }

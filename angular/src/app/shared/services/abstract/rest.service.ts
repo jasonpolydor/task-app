@@ -36,7 +36,7 @@ export abstract class RestService extends UnsubscribeHelper
 
   protected deleteItem(routeGetter: Function, id: number) : Observable<any>{
     return this.http
-        .post(routeGetter(), id);
+        .delete(routeGetter(),{ body: { id } });
   }
 
 }

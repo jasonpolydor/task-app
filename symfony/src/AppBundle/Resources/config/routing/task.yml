@@ -18,7 +18,7 @@ task_edit:
 task_remove:
     path: /delete/{id}
     defaults: { _controller: "AppBundle:Task:delete"}
-    methods: POST
+    methods: DELETE
 
 task_detail:
     path: /detail/{id}
