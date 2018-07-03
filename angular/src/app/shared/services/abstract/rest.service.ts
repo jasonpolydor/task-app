@@ -24,19 +24,19 @@ export abstract class RestService extends UnsubscribeHelper
           .get(routeGetter());
   }
 
-  protected putItem(routeGetter: Function, params) : Observable<any>{
+  protected putItem(routeGetter: Function, params: Object) : Observable<any>{
     return this.http
         .put(routeGetter(), params);
   }
 
-  protected postItem(routeGetter: Function, params) : Observable<any>{
+  protected postItem(routeGetter: Function, params: Object) : Observable<any>{
     return this.http
         .post(routeGetter(), params);
   }
 
-  protected deleteItem(routeGetter: Function, params) : Observable<any>{
+  protected deleteItem(routeGetter: Function, id: number) : Observable<any>{
     return this.http
-        .delete(routeGetter(), params);
+        .post(routeGetter(), id);
   }
 
 }

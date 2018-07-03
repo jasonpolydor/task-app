@@ -33,7 +33,7 @@ class TaskController extends Controller
         if(empty($task))
            return $this->get(Helpers::class)->json("Task not found");
 
-        return $this->get(Helpers::class)->json("Success");
+        return $this->get(Helpers::class)->json("Success update task ". $id);
     }
 
     /**
@@ -47,6 +47,20 @@ class TaskController extends Controller
         if(!$this->get(Listing::class)->addTask($params))
             return $this->get(Helpers::class)->json("Task not added");
 
-        return $this->get(Helpers::class)->json("Success");
+        return $this->get(Helpers::class)->json("Success add new task");
+    }
+
+    /**
+     * @param Request $request
+     * @return mixed
+     */
+    public function deleteAction(Request $request)
+    {
+        $id = json_decode($request->getContent(),true);
+
+        if(!$this->get(Listing::class)->deleteTask($id))
+            return $this->get(Helpers::class)->json("Task not deleted");
+
+        return $this->get(Helpers::class)->json("Successfully delete of task ". $id);
     }
 }

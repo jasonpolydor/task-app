@@ -25,6 +25,6 @@ export class UrlService {
     }
 
     deleteTask(id: number): string{
-        return this.API_URL + '/task/delete' + id;
+        return this.API_URL + '/task/delete/' + id;
     }
 }

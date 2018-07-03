@@ -47,7 +47,7 @@ export class TasksService extends RestService{
             () => this.urlService.editTask(task.id),
             task
         )
-        .subscribe(data =>{
+        .subscribe(() =>{
             const index = this.tasks.findIndex(t => t.id == task.id);
             this.tasks = [
                 ...this.tasks.slice(0, index),
@@ -63,7 +63,7 @@ export class TasksService extends RestService{
             () => this.urlService.newTask(),
             task
         )
-        .subscribe(data =>{
+        .subscribe(() =>{
             this.tasks.push(task);
             this._tasks$.next(this.tasks);
         }));
@@ -72,9 +72,9 @@ export class TasksService extends RestService{
     public deleteTask(task) {
         this.addSubscription(this.deleteItem(
             () => this.urlService.deleteTask(task.id),
-            task
+            task.id
         )
-        .subscribe(data =>{
+        .subscribe(() =>{
             this.tasks.splice(this.tasks.indexOf(task), 1);
         }));
     }

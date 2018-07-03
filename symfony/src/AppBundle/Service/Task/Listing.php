@@ -67,7 +67,16 @@ class Listing
         $this->em->persist($task);
         $this->em->flush();
         return true;
+    }
 
+    public function deleteTask($id){
+        $task = $this->em->getRepository(Task::class)->findOneBy([
+            'id' => $id
+        ]);
+
+        $this->em->remove($task);
+        $this->em->flush();
+        return true;
     }
 
     /**
@@ -91,7 +100,7 @@ class Listing
     {
         return [
             'id' => $task->getId(),
-            'user' => $task->getUser()->getUsername(),
+            'user' => $task->getUser()->getId(),
             'title' => $task->getTitle(),
             'description' => $task->getDescription(),
             'status' => $task->getStatus()
