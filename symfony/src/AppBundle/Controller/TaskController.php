@@ -18,12 +18,9 @@ class TaskController extends Controller
 
     public function editAction($id, Request $request)
     {
-        //$params = json_decode($request->getContent(),true);
-        //$data = $params['q'];
+        $params = json_decode($request->getContent(),true);
 
-        $data = $request->get('q');
-
-        $task = $this->get(Listing::class)->updateTask($id, $data);
+        $task = $this->get(Listing::class)->updateTask($id, $params);
 
         if(empty($task))
            return $this->get(Helpers::class)->json("Task not found");

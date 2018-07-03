@@ -39,23 +39,19 @@ export class TasksService extends RestService{
     }
 
     public editTask(task: TaskModel) {
-        console.log(this.urlService.editTask(task.id));
-        console.log(task);
         this.postItem(
             () => this.urlService.editTask(task.id),
             task
         )
         .subscribe(data =>{
-            alert('updated');
+            const index = this.tasks.findIndex(t => t.id == task.id);
+            this.tasks = [
+                ...this.tasks.slice(0, index),
+                task,
+                ...this.tasks.slice(index + 1)
+            ];
+            this._tasks$.next(this.tasks);
         });
-
-        const index = this.tasks.findIndex(t => t.id == task.id);
-        this.tasks = [
-            ...this.tasks.slice(0, index),
-            task,
-            ...this.tasks.slice(index + 1)
-        ];
-        this._tasks$.next(this.tasks);
     }
 
     public getTask(id: number): TaskModel {
