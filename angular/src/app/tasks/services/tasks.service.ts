@@ -29,13 +29,13 @@ export class TasksService extends RestService{
 
     public getTasks()
     {
-        this.getItem(
+        this.addSubscription(this.getItem(
             () => this.urlService.getTasks()
         )
         .subscribe(data =>{
             this.tasks = data['tasks'];
             this._tasks$.next(this.tasks);
-        });
+        }));
     }
 
     public getTask(id: number): TaskModel {
@@ -43,7 +43,7 @@ export class TasksService extends RestService{
     }
 
     public editTask(task: TaskModel) {
-        this.putItem(
+        this.addSubscription(this.putItem(
             () => this.urlService.editTask(task.id),
             task
         )
@@ -55,22 +55,28 @@ export class TasksService extends RestService{
                 ...this.tasks.slice(index + 1)
             ];
             this._tasks$.next(this.tasks);
-        });
+        }));
     }
 
     public newTask(task: TaskModel) {
-        this.postItem(
+        this.addSubscription(this.postItem(
             () => this.urlService.newTask(),
             task
         )
         .subscribe(data =>{
             this.tasks.push(task);
             this._tasks$.next(this.tasks);
-        });
+        }));
     }
 
     public deleteTask(task) {
-        this.tasks.splice(this.tasks.indexOf(task), 1);
+        this.addSubscription(this.deleteItem(
+            () => this.urlService.deleteTask(task.id),
+            task
+        )
+        .subscribe(data =>{
+            this.tasks.splice(this.tasks.indexOf(task), 1);
+        }));
     }
 
     public getObservable(): Observable<TaskModel[]> {

@@ -9,6 +9,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 class TaskController extends Controller
 {
+    /**
+     * @return mixed
+     */
     public function indexAction()
     {
         $tasks = $this->get(Listing::class)->findTasks();
@@ -16,6 +19,11 @@ class TaskController extends Controller
         return $this->get(Helpers::class)->json($tasks);
     }
 
+    /**
+     * @param $id
+     * @param Request $request
+     * @return mixed
+     */
     public function editAction($id, Request $request)
     {
         $params = json_decode($request->getContent(),true);
@@ -28,6 +36,10 @@ class TaskController extends Controller
         return $this->get(Helpers::class)->json("Success");
     }
 
+    /**
+     * @param Request $request
+     * @return mixed
+     */
     public function newAction(Request $request)
     {
         $params = json_decode($request->getContent(),true);

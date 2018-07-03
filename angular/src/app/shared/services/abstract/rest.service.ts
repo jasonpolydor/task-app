@@ -2,8 +2,9 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
 import {UrlService} from '../url.service';
+import {UnsubscribeHelper} from '../../utils/Unsubscribe.helper';
 
-export abstract class RestService
+export abstract class RestService extends UnsubscribeHelper
 {
   /**
    *
@@ -14,7 +15,9 @@ export abstract class RestService
       protected urlService: UrlService,
       protected http: HttpClient
   )
-  {}
+  {
+    super();
+  }
 
   protected getItem(routeGetter: Function) : Observable<any>{
       return this.http
@@ -29,6 +32,11 @@ export abstract class RestService
   protected postItem(routeGetter: Function, params) : Observable<any>{
     return this.http
         .post(routeGetter(), params);
+  }
+
+  protected deleteItem(routeGetter: Function, params) : Observable<any>{
+    return this.http
+        .delete(routeGetter(), params);
   }
 
 }
