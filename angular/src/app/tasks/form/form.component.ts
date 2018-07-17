@@ -3,7 +3,7 @@ import { TaskModel } from '../models/task.model';
 import { TasksService } from '../services/tasks.service';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { UnsubscribeHelper } from '../../shared/utils/Unsubscribe.helper';
 
 @Component({
@@ -18,18 +18,38 @@ export class FormComponent extends UnsubscribeHelper implements OnInit, OnDestro
         protected tasksService: TasksService,
         protected router: Router,
         protected activateRoute : ActivatedRoute,
+        protected fb: FormBuilder
     ){
         super();
     }
 
     ngOnInit() {
+        //with FormBuilder
+        // this.taskForm = this.fb.group({
+        //     id: ['', Validators.required],
+        //     title:   ['',
+        //         Validators.required,
+        //         Validators.pattern('^[a-zA-Z]+$'),
+        //         Validators.minLength(3)
+        //     ],
+        //     user:   ['', Validators.required],
+        //     description:  ['', Validators.required],
+        //     status:  ['', Validators.required],
+        // });
+
+        //without FormBuilder
         this.taskForm = new FormGroup({
-            id:  new FormControl(),
-            title:  new FormControl(),
-            user:  new FormControl(),
-            description:  new FormControl(),
-            status:  new FormControl(),
+            id: new FormControl('', Validators.compose([ Validators.required ])),
+            title: new FormControl('', Validators.compose([
+                Validators.required,
+                Validators.pattern('^[a-zA-Z]+$'),
+                Validators.minLength(3)
+            ])),
+            user:  new FormControl('', Validators.compose([ Validators.required ])),
+            description:  new FormControl('', Validators.compose([ Validators.required ])),
+            status:  new FormControl('', Validators.compose([ Validators.required ]))
         });
+
         this.addSubscription(this.activateRoute.params.subscribe(params =>{
             if(params['id']){
                 this.task = this.tasksService.getTask(+params['id']);
