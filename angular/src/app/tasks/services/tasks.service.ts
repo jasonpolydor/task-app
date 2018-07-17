@@ -71,8 +71,7 @@ export class TasksService extends RestService{
 
     public deleteTask(task) {
         this.addSubscription(this.deleteItem(
-            () => this.urlService.deleteTask(task.id),
-            task.id
+            () => this.urlService.deleteTask(task.id)
         )
         .subscribe(() =>{
             this.tasks.splice(this.tasks.indexOf(task), 1);

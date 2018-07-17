@@ -1,4 +1,5 @@
 import {HttpClient} from '@angular/common/http';
+import {HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
 import {UrlService} from '../url.service';
@@ -34,9 +35,9 @@ export abstract class RestService extends UnsubscribeHelper
         .post(routeGetter(), params);
   }
 
-  protected deleteItem(routeGetter: Function, id: number) : Observable<any>{
+  protected deleteItem(routeGetter: Function) : Observable<any>{
     return this.http
-        .delete(routeGetter(),{ body: { id } });
+        .delete(routeGetter());
   }
 
 }

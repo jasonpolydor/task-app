@@ -5,6 +5,7 @@ namespace AppBundle\Service\Task;
 use CoreBundle\Entity\Task;
 use CoreBundle\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\Config\Definition\Exception\Exception;
 
 class Listing
 {
@@ -73,6 +74,10 @@ class Listing
         $task = $this->em->getRepository(Task::class)->findOneBy([
             'id' => $id
         ]);
+
+        if (!$task) {
+            throw new Exception('No task found for id '.$id);
+        }
 
         $this->em->remove($task);
         $this->em->flush();
