@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import {routes} from '../routes';
 import {FormComponent} from './form/form.component';
+import {SearchComponent} from './search/search.component';
 
 @NgModule({
     imports: [
@@ -19,12 +20,14 @@ import {FormComponent} from './form/form.component';
     declarations: [
         ListComponent,
         ItemComponent,
-        FormComponent
+        FormComponent,
+        SearchComponent
     ],
     exports:[
         ListComponent,
         ItemComponent,
-        FormComponent
+        FormComponent,
+        SearchComponent
     ],
     providers: [
         TasksService,
