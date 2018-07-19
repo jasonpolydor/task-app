@@ -9,15 +9,19 @@ import { RouterModule } from '@angular/router';
 import { routes } from '../routes';
 import { FormComponent } from './form/form.component';
 import { SearchComponent } from './search/search.component';
-
 import { MatCardModule } from '@angular/material/card';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
         MatCardModule,
+        MatToolbarModule,
+        MatInputModule,
+        MatIconModule,
         RouterModule.forChild(routes),
         HttpClientModule
     ],

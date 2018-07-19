@@ -9,8 +9,7 @@
     <p><strong>Status:</strong> {{task.status}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button class="btn btn-primary"
-            [routerLink]="['edit',task.id]"><span class="fa fa-edit"></span></button>
-    <button (click)="deleteTask()" class="btn btn-danger"><span class="fa fa-trash"></span></button>
+    <mat-icon fxFlex="10%" [routerLink]="['/edit',task.id]">mode_edit</mat-icon>
+    <mat-icon fxFlex="10%" (click)="deleteTask()">delete</mat-icon>
   </mat-card-actions>
 </mat-card>

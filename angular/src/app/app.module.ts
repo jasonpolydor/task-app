@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +45,7 @@ import { ContactComponent } from './contact/contact.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
