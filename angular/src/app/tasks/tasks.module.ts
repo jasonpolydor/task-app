@@ -9,19 +9,24 @@ import { RouterModule } from '@angular/router';
 import { routes } from '../routes';
 import { FormComponent } from './form/form.component';
 import { SearchComponent } from './search/search.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatInputModule } from '@angular/material/input';
-import { MatIconModule } from '@angular/material/icon';
+
+import { MatToolbarModule, MatInputModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        MatCardModule,
         MatToolbarModule,
-        MatInputModule,
+        MatButtonModule,
+        MatSidenavModule,
         MatIconModule,
+        MatListModule,
+        MatGridListModule,
+        MatCardModule,
+        MatMenuModule,
+        MatInputModule,
+        FlexLayoutModule,
         RouterModule.forChild(routes),
         HttpClientModule
     ],

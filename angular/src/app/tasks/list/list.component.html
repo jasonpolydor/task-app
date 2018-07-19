@@ -1,8 +1,11 @@
-<div fxFlex="50%" fxFlex.gt-sm="100%">
+<div fxFlex.gt-sm="100%">
     <h1>List of Tasks</h1>
     <app-search></app-search><br>
     <button button="submit" mat-raised-button color="primary" [routerLink]="['/create']"><i class="fa fa-plus"></i>New Task</button>
-    <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+    <br><br>
+    <div fxLayout="row"
+         fxLayout.xs="column"
+         fxLayoutWrap fxLayoutGap="0.5%">
         <app-item *ngFor="let task of (tasksService.getObservable() |async)" [task]=task></app-item>
     </div>
 </div>
