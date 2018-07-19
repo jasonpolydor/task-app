@@ -6,14 +6,18 @@ import { TasksService } from './services/tasks.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import {routes} from '../routes';
-import {FormComponent} from './form/form.component';
-import {SearchComponent} from './search/search.component';
+import { routes } from '../routes';
+import { FormComponent } from './form/form.component';
+import { SearchComponent } from './search/search.component';
+
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
+        MatCardModule,
         RouterModule.forChild(routes),
         HttpClientModule
     ],
