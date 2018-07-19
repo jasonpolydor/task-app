@@ -88,7 +88,7 @@ class Listing
      * @param array $tasks
      * @return array
      */
-    private function prepare(array $tasks) {
+    public function prepare(array $tasks) {
 
         return array_map(function(Task $task) {
 
