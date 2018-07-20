@@ -92,7 +92,7 @@ export class TasksService extends RestService{
     }
 
     //getter and setter for bSubject _task$
-    task$(state: TaskModel){
+    task$(state){
         return this._tasks$.next(state);
     }
 

@@ -23,6 +23,10 @@ export class PlayerComponent implements OnInit {
     },
     200: {
       current: 'ssj',
+      next: 'ssj2'
+    },
+    300: {
+      current: 'ssj2',
       next: 'ssj3'
     }
   };
@@ -65,7 +69,7 @@ export class PlayerComponent implements OnInit {
   }
 
   private fillMeter(level){
-    let limit = 200;
+    let limit = 300;
 
     if(level >= limit){
       return;
