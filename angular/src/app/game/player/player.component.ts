@@ -6,11 +6,11 @@ import { tap } from 'rxjs/internal/operators/tap';
 import { fromEvent } from 'rxjs/internal/observable/fromEvent';
 
 @Component({
-  selector: 'app-game',
-  templateUrl: './game.component.html',
-  styleUrls: ['./game.component.scss']
+  selector: 'app-player',
+  templateUrl: './player.component.html',
+  styleUrls: ['./player.component.scss']
 })
-export class GameComponent implements OnInit {
+export class PlayerComponent implements OnInit {
 
   private sprite;
   private meterContainer;
@@ -51,12 +51,12 @@ export class GameComponent implements OnInit {
         filter(level => level && level.next)
 
     )
-    .subscribe(({ current, next }) => {
-      console.log(current);
-      console.log(next);
-      this.sprite.classList.remove(current);
-      this.sprite.classList.add(next);
-    });
+        .subscribe(({ current, next }) => {
+          console.log(current);
+          console.log(next);
+          this.sprite.classList.remove(current);
+          this.sprite.classList.add(next);
+        });
 
     end.subscribe(() => {
       this.sprite.classList.remove('powerup');

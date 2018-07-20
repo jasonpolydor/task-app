@@ -4,7 +4,8 @@ import { FormComponent } from './tasks/form/form.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import {GameComponent} from './game/game.component';
+import {GameComponent} from './game/game/game.component';
+import {PlayerComponent} from './game/player/player.component';
 
 export const routes: Routes = [
     {
@@ -21,7 +22,7 @@ export const routes: Routes = [
     },
     {
         path: 'game',
-        component: GameComponent,
+        component: PlayerComponent,
     },
     {
         path: 'about',

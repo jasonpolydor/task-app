@@ -18,7 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { GameComponent } from './game/game.component';
+import { GameModule } from './game/game.module';
 
 @NgModule({
   declarations: [
@@ -27,8 +27,7 @@ import { GameComponent } from './game/game.component';
     DashboardComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent,
-    GameComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +35,7 @@ import { GameComponent } from './game/game.component';
     AngularFontAwesomeModule,
     SharedModule,
     TasksModule,
+    GameModule,
     RouterModule.forRoot(routes, {enableTracing: false}),
     BrowserAnimationsModule,
     LayoutModule,
