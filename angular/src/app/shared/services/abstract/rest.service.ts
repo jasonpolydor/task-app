@@ -4,6 +4,7 @@ import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
 import {UrlService} from '../url.service';
 import {UnsubscribeHelper} from '../../utils/Unsubscribe.helper';
+import {SearchModel} from '../../../tasks/models/search.model';
 
 export abstract class RestService extends UnsubscribeHelper
 {

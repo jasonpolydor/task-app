@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {isUndefined} from 'util';
 
-import 'rxjs/add/operator/map';
+import { map } from 'rxjs/internal/operators/map';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 import {HttpClient} from '@angular/common/http';
 import {UrlService} from '../../shared/services/url.service';
 import {RestService} from '../../shared/services/abstract/rest.service';
 import {TaskModel} from '../models/task.model';
+import {SearchModel} from '../models/search.model';
 
 
 @Injectable({
@@ -25,6 +26,18 @@ export class TasksService extends RestService{
     ) {
         super(urlService, http);
         this._tasks$ = new BehaviorSubject<TaskModel[]>(this.tasks);
+    }
+
+    public searchTasks(query: SearchModel) : Observable<TaskModel>{
+        return this.getItem(
+            () => this.urlService.searchTasks(query['search'])
+        ).pipe(
+            map(
+                (state =>{
+                    return (state as TaskModel)
+                })
+            )
+        )
     }
 
     public getTasks()
@@ -76,6 +89,11 @@ export class TasksService extends RestService{
         .subscribe(() =>{
             this.tasks.splice(this.tasks.indexOf(task), 1);
         }));
+    }
+
+    //getter and setter for bSubject _task$
+    task$(state: TaskModel){
+        return this._tasks$.next(state);
     }
 
     public getObservable(): Observable<TaskModel[]> {

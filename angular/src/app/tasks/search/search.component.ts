@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {UnsubscribeHelper} from '../../shared/utils/Unsubscribe.helper';
 import {FormControl, FormGroup} from '@angular/forms';
+import {TasksService} from '../services/tasks.service';
 
 @Component({
   selector: 'app-search',
@@ -12,6 +13,7 @@ export class SearchComponent extends UnsubscribeHelper implements OnInit {
   public searchForm: FormGroup;
 
   constructor(
+      private taskService: TasksService
   ){
     super();
   }
@@ -23,6 +25,12 @@ export class SearchComponent extends UnsubscribeHelper implements OnInit {
   }
 
   onSubmit() {
-    alert("Thanks for submitting! Data: " + JSON.stringify(this.searchForm.value));
+    this.addSubscription(
+        this.taskService.searchTasks(this.searchForm.value).subscribe(
+            (state)=> {
+              this.taskService.task$(state);
+            }
+        )
+    );
   }
 }

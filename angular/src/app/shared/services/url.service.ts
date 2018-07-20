@@ -11,6 +11,11 @@ export class UrlService {
         this.API_URL = environment.apiUrl;
     }
 
+    searchTasks(query: string): string
+    {
+        return this.API_URL + '/task/search?q=' + query;
+    }
+
     getTasks(): string
     {
       return this.API_URL + '/task/list';

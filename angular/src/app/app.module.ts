@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { GameComponent } from './game/game.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     DashboardComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
