@@ -51,7 +51,7 @@ class Listing
         return [
             'id' => $translation->getId(),
             'en' => $translation->getEn(),
-            'kr' => $translation->getKr()
+            'kr' => $translation->getKr(),
         ];
     }
 }
