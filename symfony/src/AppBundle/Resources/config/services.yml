@@ -1,5 +1,6 @@
 imports:
     - { resource: 'services/tasks.yml' }
+    - { resource: 'services/translations.yml' }
 
 services:
     AppBundle\Service\Helpers:

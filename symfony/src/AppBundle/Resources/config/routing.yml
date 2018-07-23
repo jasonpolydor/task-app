@@ -9,3 +9,7 @@ app_user:
 app_task:
     resource: "@AppBundle/Resources/config/routing/task.yml"
     prefix: /task
+
+app_translation:
+    resource: "@AppBundle/Resources/config/routing/translation.yml"
+    prefix: /translation

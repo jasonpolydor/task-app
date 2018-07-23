@@ -1,0 +1,26 @@
+translation_list:
+    path: /list
+    defaults: { _controller: "AppBundle:Translation:index"}
+    methods:  GET
+    options:
+        expose: true
+
+translation_new:
+    path: /new
+    defaults: { _controller: "AppBundle:Translation:new"}
+    methods: POST
+
+translation_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:Translation:edit"}
+    methods: PUT
+
+translation_remove:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Translation:delete"}
+    methods: DELETE
+
+translation_search:
+    path: /search
+    defaults: { _controller: "AppBundle:Translation:search"}
+    methods: [GET, POST]
