@@ -62,11 +62,11 @@ export class FormComponent extends UnsubscribeHelper implements OnInit, OnDestro
 
     editTask(){
         this.tasksService.editTask(this.task);
-        this.router.navigate(['']);
+        this.router.navigate(['task']);
     }
 
     createTask(){
         this.tasksService.newTask(this.task);
-        this.router.navigate(['']);
+        this.router.navigate(['task']);
     }
 }

@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { GameModule } from './game/game.module';
+import {TranslatorModule} from './translator/translator.module';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { GameModule } from './game/game.module';
     SharedModule,
     TasksModule,
     GameModule,
+    TranslatorModule,
     RouterModule.forRoot(routes, {enableTracing: false}),
     BrowserAnimationsModule,
     LayoutModule,

@@ -11,25 +11,25 @@ export class UrlService {
         this.API_URL = environment.apiUrl;
     }
 
-    searchTasks(query: string): string
+    search(query: string, api: string): string
     {
-        return this.API_URL + '/task/search?q=' + query;
+        return this.API_URL + api +'/search?q=' + query;
     }
 
-    getTasks(): string
+    get(api: string): string
     {
-      return this.API_URL + '/task/list';
+      return this.API_URL + api + '/list';
     }
 
-    editTask(id: number): string{
-        return this.API_URL + '/task/edit/' + id;
+    edit(id: number, api: string): string{
+        return this.API_URL + api + '/edit/' + id;
     }
 
-    newTask(): string{
-        return this.API_URL + '/task/new';
+    add(api: string): string{
+        return this.API_URL + api + '/new';
     }
 
-    deleteTask(id: number): string{
-        return this.API_URL + '/task/delete/' + id;
+    remove(id: number, api: string): string{
+        return this.API_URL + api + '/delete/' + id;
     }
 }

@@ -17,6 +17,7 @@ import {SearchModel} from '../models/search.model';
 })
 export class TasksService extends RestService{
 
+    private api:  string = '/task';
     private tasks = [];
     private _tasks$: BehaviorSubject<TaskModel[]>;
 
@@ -30,7 +31,7 @@ export class TasksService extends RestService{
 
     public searchTasks(query: SearchModel) : Observable<TaskModel>{
         return this.getItem(
-            () => this.urlService.searchTasks(query['search'])
+            () => this.urlService.search(query['search'], this.api)
         ).pipe(
             map(
                 (state =>{
@@ -43,7 +44,7 @@ export class TasksService extends RestService{
     public getTasks()
     {
         this.addSubscription(this.getItem(
-            () => this.urlService.getTasks()
+            () => this.urlService.get(this.api)
         )
         .subscribe(data =>{
             this.tasks = data['tasks'];
@@ -57,7 +58,7 @@ export class TasksService extends RestService{
 
     public editTask(task: TaskModel) {
         this.addSubscription(this.putItem(
-            () => this.urlService.editTask(task.id),
+            () => this.urlService.edit(task.id, this.api),
             task
         )
         .subscribe(() =>{
@@ -73,7 +74,7 @@ export class TasksService extends RestService{
 
     public newTask(task: TaskModel) {
         this.addSubscription(this.postItem(
-            () => this.urlService.newTask(),
+            () => this.urlService.add(this.api),
             task
         )
         .subscribe(() =>{
@@ -84,7 +85,7 @@ export class TasksService extends RestService{
 
     public deleteTask(task) {
         this.addSubscription(this.deleteItem(
-            () => this.urlService.deleteTask(task.id)
+            () => this.urlService.remove(task.id, this.api)
         )
         .subscribe(() =>{
             this.tasks.splice(this.tasks.indexOf(task), 1);
