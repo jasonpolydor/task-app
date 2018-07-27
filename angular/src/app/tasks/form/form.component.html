@@ -32,6 +32,9 @@
                            [(ngModel)]="task.title"
                     >
                 </div>
+                <div *ngIf="taskForm.get('title').touched && taskForm.get('title').hasError('required')" class="alert alert-danger">Title is required</div>
+                <div *ngIf="taskForm.get('title').touched && taskForm.get('title').hasError('minLength')" class="alert alert-danger">Title should be at least three characters</div>
+                <div *ngIf="taskForm.get('title').touched && taskForm.get('title').hasError('pattern')" class="alert alert-danger">Title is can be letters only</div>
 
                 <div class="form-group">
                     <input type="text"
@@ -50,6 +53,8 @@
                            [(ngModel)]="task.status"
                     >
                 </div>
+
+                <!--<button button="submit" mat-raised-button color="primary" [routerLink]="['/create']"><i class="fa fa-plus"></i>New Task</button>-->
 
                 <button type="submit"
                         class="btn btn-primary"

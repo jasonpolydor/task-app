@@ -1,0 +1,9 @@
+<h2> English to Kreole Translations</h2>
+
+<mat-list id="infinite-scroller"
+          appInfiniteScroller
+          scrollPerecnt="70"
+          immediateCallback="true"
+          [scrollCallback]="scrollCallback">
+  <mat-list-item *ngFor="let translation of translations"> {{translation.en}} - <b>{{translation.kr}}</b> </mat-list-item>
+</mat-list>

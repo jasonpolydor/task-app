@@ -1,0 +1,6 @@
+<form [formGroup]="searchForm" novalidate (ngSubmit)="onSubmit(searchForm)">
+    <mat-form-field class="search-form">
+        <input matInput formControlName="search" name="search" id="search" placeholder="Search Task" type="text">
+        <button button="submit" mat-raised-button color="primary">Search</button>
+    </mat-form-field>
+</form>

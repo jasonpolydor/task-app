@@ -6,10 +6,10 @@ app_user:
     resource: "@AppBundle/Resources/config/routing/user.yml"
     prefix: /user
 
-app_tasks:
-    resource: "@AppBundle/Resources/config/routing/tasks.yml"
-    prefix: /tasks
-
 app_task:
     resource: "@AppBundle/Resources/config/routing/task.yml"
     prefix: /task
+
+app_translation:
+    resource: "@AppBundle/Resources/config/routing/translation.yml"
+    prefix: /translation

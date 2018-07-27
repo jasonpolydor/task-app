@@ -6,25 +6,41 @@ import { TasksService } from './services/tasks.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import {routes} from '../routes';
-import {FormComponent} from './form/form.component';
+import { routes } from '../routes';
+import { FormComponent } from './form/form.component';
+import { SearchComponent } from './search/search.component';
+
+import { MatToolbarModule, MatInputModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        MatGridListModule,
+        MatCardModule,
+        MatMenuModule,
+        MatInputModule,
+        FlexLayoutModule,
         RouterModule.forChild(routes),
         HttpClientModule
     ],
     declarations: [
         ListComponent,
         ItemComponent,
-        FormComponent
+        FormComponent,
+        SearchComponent
     ],
     exports:[
         ListComponent,
         ItemComponent,
-        FormComponent
+        FormComponent,
+        SearchComponent
     ],
     providers: [
         TasksService,

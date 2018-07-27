@@ -1,0 +1,3 @@
+services:
+    AppBundle\Service\Translation\Listing:
+        arguments: ["@doctrine.orm.entity_manager"]

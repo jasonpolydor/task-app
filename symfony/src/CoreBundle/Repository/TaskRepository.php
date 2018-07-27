@@ -10,4 +10,17 @@ namespace CoreBundle\Repository;
  */
 class TaskRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function searchTaskByKeyword($content){
+        $qb = $this->createQueryBuilder("t");
+
+        $qb->select()
+            ->distinct()
+            ->where($qb->expr()->like('t.title', '?1'))
+            ->orWhere($qb->expr()->like('t.description', '?1'));
+
+        $qb->setParameter(1, "%" . $content . "%");
+
+        return $qb->getQuery()->getResult();
+    }
 }

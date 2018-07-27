@@ -1,3 +1,7 @@
 services:
-    AppBundle\Service\Tasks\Listing:
+    AppBundle\Service\Task\Listing:
         arguments: ["@doctrine.orm.entity_manager"]
+
+    AppBundle\Service\Task\Search:
+        arguments: ["@doctrine.orm.entity_manager"]
+        autowire: true

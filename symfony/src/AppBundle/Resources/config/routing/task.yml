@@ -1,3 +1,10 @@
+task_list:
+    path: /list
+    defaults: { _controller: "AppBundle:Task:index"}
+    methods:  GET
+    options:
+        expose: true
+
 task_new:
     path: /new
     defaults: { _controller: "AppBundle:Task:new"}
@@ -6,7 +13,12 @@ task_new:
 task_edit:
     path: /edit/{id}
     defaults: { _controller: "AppBundle:Task:edit"}
-    methods: POST
+    methods: PUT
+
+task_remove:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Task:delete"}
+    methods: DELETE
 
 task_detail:
     path: /detail/{id}
@@ -15,10 +27,5 @@ task_detail:
 
 task_search:
     path: /search
-    defaults: { _controller: "AppBundle:Task:search"}
-    methods: POST
-
-task_remove:
-    path: /remove/{id}
-    defaults: { _controller: "AppBundle:Task:remove"}
-    methods: POST
+    defaults: { _controller: "AppBundle:Search:index"}
+    methods: [GET, POST]
